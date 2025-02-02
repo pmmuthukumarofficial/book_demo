@@ -1,0 +1,13 @@
+
+const mongoose = require('mongoose');
+
+
+const bookSchema = {
+    bookId: {type:Number, requird:true},
+    name: {type:String, requird:true},
+    author: {type:String, requird:true},
+    price: {type:Number, requird:true},
+    stock: {type:Number, requird:true},
+}
+
+module.exports = mongoose.model("Book", bookSchema);
